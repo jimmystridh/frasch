@@ -1,0 +1,52 @@
+#!/bin/bash
+
+. ./frasch_funcs.sh
+. ./frasch_mac_funcs.sh
+
+osascript -e 'tell application "System Preferences" to quit'
+
+sudo -v
+
+install_homebrew
+install_brewfile
+
+install_oh_my_zsh
+
+
+clone_fzf_zsh_plugin
+clone_powerlevel10k_theme
+install_rosetta
+install_gh_copilot
+check_and_trust_dotnet_dev_certs
+
+add_ios_simulator_to_launchpad
+add_watch_simulator_to_launchpad
+
+clearPersistentApps
+clearPersistentItems
+clearRecentApps
+configure_screenshots
+disable_boot_sound
+disable_photos_auto_open
+disable_window_animations
+enable_close_view_scroll_wheel_toggle
+enable_function_keys
+#enable_safari_developer_options
+enable_window_switching
+enableTapToClick
+enableThreeFingerDrag
+hide_desktop_items
+set_always_show_scroll_bars
+set_dock_orientation_bottom
+set_expanded_save_panel
+set_finder_view_style
+set_key_repeat_rates
+set_screensaver_password_delay
+set_update_frequency
+setAutoHideDock
+skip_diskimage_verification
+set_finder_view_style
+show_finder_quit_menu_item
+set_computer_name "JSMBV3"
+
+killall Dock
